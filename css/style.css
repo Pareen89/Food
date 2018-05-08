@@ -1,0 +1,155 @@
+/* Global */
+:root{
+    --primary-color:#fff;
+    --secondary-color:#708a70;
+    --text-color:#000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: 16px;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.h-one-section{
+    font-size: 30px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.section{
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    
+}
+
+/* Go to top */
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+    font-size: 20px;
+    width: 100%;
+
+
+}
+
+/* header */
+#header{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-top: 30px;
+    min-height: 70px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+#header a{
+    color: var(--secondary-color);
+}
+
+.nav-left h1{
+    font-size: 26px;
+    word-spacing: 10px;
+}
+.nav-right{
+    padding: 10px 0;
+}
+.nav-right a:hover{
+    font-weight: bold;
+}
+
+/* main intro */
+#main-intro{
+    height: 87vh;
+    background: linear-gradient(to right bottom, rgba(171, 186, 171, 0.3), rgba(255, 255, 255, 0.3)),url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--primary-color);
+}
+#main-intro h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+
+}
+/*about us*/
+#about-us {
+    background: linear-gradient(to right bottom, rgba(171, 186, 171, 0.3), rgba(255, 255, 255, 0.3)), url("../img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+#about-us h2 {
+    margin-top: 100px;
+}
+
+
+
+/*services*/
+.service-p{
+    padding-bottom: 150px;
+}
+.section h1{
+    color: var(--secondary-color);
+}
+.box h3{
+    color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+.box p{
+    color: var(--text-color);
+}
+.box img{
+    width: 120px;
+    margin: 20px 0;
+
+}
+
+/* contact us*/
+
+
+
+/* Media Queries */
+
+@media(min-width: 768px){
+    /* global */
+    .flex{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    /*header*/
+    .nav-right ul{
+        display: flex;
+    }
+    .nav-right ul li{
+        padding: 0 25px;
+    }
+}
